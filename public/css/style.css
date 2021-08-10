@@ -39,7 +39,7 @@ textarea,
 input {
     padding: .5%;
     border-radius: 5px;
-    border: 1px solid rgb(226, 217, 217);
+    border: 1px solid rgb(209, 204, 209);
 }
 
 textarea:focus,
