@@ -1,8 +1,28 @@
+  <div id="map" style="width: auto; height: 550px; overflow:hidden;"></div>
+
 {{#each posts as |post|}}
 
 {{> post-info post }}
 </div>
 
+
+
+  
+
+
+
+
+
 {{else}}
 <h6 class="pb-4 has-text-centered is-italic">Click on the "Create New Post" button to be the first one to create a post!</h6>
 {{/each}}
+
+<!--Scripts for the google map-->
+
+<script src="/js/map.js"></script> 
+
+<script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8mtSBqDx2ekqIGhPg-ZjqbStW5svNq7Q&callback=initMap" async>
+</script>
+
+
