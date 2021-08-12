@@ -32,14 +32,14 @@
         {{{ body }}}
     </main>
 
-    <footer class="footer rows pb-2">
+    <footer class="footer rows pb-5">
         <div class="row-is-full content has-text-centered">
             <p>
-                <a href="/">Home</a>{{#if loggedIn}} |
-                <a href="/dashboard/">Dashboard</a> |
+                <a href="/">Home</a>{{#if loggedIn}} 👽 <br>
+                <a href="/dashboard/">Dashboard</a> 👽
                 <a href="/dashboard/create/">Create New Post</a>
                 {{else}}
-                | <a href="/login/">Login</a>
+                👽 <a href="/login/">Login</a>
                 {{/if}}
             </p>
         </div>
@@ -54,6 +54,10 @@
 {{#if loggedIn}}
 <script src="/js/logout.js"></script>
 {{/if}}
+
+
+
+
 </body>
 
 </html>
