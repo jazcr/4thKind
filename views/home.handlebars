@@ -1,12 +1,37 @@
 
-
-{{#if loggedIn}}
+<div class="container-fluid">
+    <h2 class="subtitle is-2 has-text-centered">UFO Sightings Map</h2>
+    <p class="subtitle is-5 has-text-centered">This maps shows recent reports of UFO sightings in Colorado. If you would like to report a recent sighting, drop an alien on the map </p>
+    <div class="has-image-centered" id="map" style="width: 80%; height: 550px; overflow:hidden; margin-left: auto; margin-right: auto;"></div>
+</div>
+<br></br>
+<br></br>
+<hr>
+<br></br>
+<div class="container-fluid">
+    <h2 class="subtitle is-2 has-text-centered">UFO Gossip</h2>
+    <p class="subtitle is-5 has-text-centered">See what our fellow UFO stalkers are saying!</p>
 {{#each posts as |post|}}
 
 {{> post-info post }}
 </div>
 
+
+
+  
+
+
+
+
+
 {{else}}
 <h6 class="pb-4 has-text-centered is-italic">Click on the "Create New Post" button to be the first one to create a post!</h6>
 {{/each}}
-{{/if}}
+
+<!--Scripts for the google map-->
+
+<script src="/js/map.js"></script> 
+
+<script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8mtSBqDx2ekqIGhPg-ZjqbStW5svNq7Q&callback=initMap" async>
+</script>

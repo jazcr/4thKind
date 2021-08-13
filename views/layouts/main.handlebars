@@ -9,46 +9,55 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <style type="text/css">
+        body {
+            cursor: url('data:image/x-icon;base64,AAACAAEAICACAAgACAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAP9IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAPAAAAH4AAAB+AAAA/wAAAP8AAAGZgAABGIAAARiAAAE8gAAB/4AAAP8AAAD/AAAAfgAAAAAAAA//////////////////////////////////////////////////////////////////////////////////////5////8P///+B////AP///wD///4Af//+AH///AA///wAP//8AD///AA///wAP//+AH///gB///cA///zgf//8='), auto;
+        }
+    </style>
 </head>
 
 <div class="wrapper">
     <header>
-        <h1 class="has-text-black px-3 py-3 has-text-weight-bold">4thKind</h1>
-        <p>A safe place to share your extraterrestrial encounters! 👽</p>
-        <nav class="navbar mt-2">
+        <h1 class="px-3 py-3 is-size-1 has-text-weigth-bold is-family-monospace has-text-centered"><span class="neonText">👽</span> THE FOURTH KIND
+        </h1>
+        <p class="is-size-4">A safe place to share your extraterrestrial encounters! </p>
+        <nav class="navbar">
             {{#if loggedIn}}
-            <a href="/" class="navbar-item is-hoverable pt-1">Home</a>
-            <a href="/dashboard" class="navbar-item is-hoverable pt-1">Dashboard</a>
-            <a href="/dashboard/create/" class="button is-primary navbar-item is-hoverable pt-1 mr-4" id="createPost">Create Post</a>
-            <button id="logout" class="button is-danger">Logout</button>
+            <a href="/" class="button is-success is-outlined is-hoverable navbar-item pt-1">Home</a>
+            <a href="/dashboard" class="button is-success is-outlined navbar-item pt-1">Dashboard</a>
+            <a href="/dashboard/create/" class="button is-success is-outlined navbar-item is-hoverable pt-1 mr-4"
+                id="createPost">Create Post</a>
+            <button id="logout" class="button is-danger is-outlined">Logout</button>
             {{else}}
-            <a href="/" class="navbar-item is-hoverable pt-1">Home</a>
-            <a href="/login" class="button is-primary">Login</a>
+            <a href="/" class="button is-success is-outlined is-rounded navbar-item is-hoverable pt-1">Home</a>
+            <a href="/login" class="button is-success is-outlined is-rounded">Login</a>
             {{/if}}
         </nav>
     </header>
-<div id= "banner">
-    <img src="/img/UFO2.png" alt="UFO" style="margin: 200px 0px 0px 45%; background: transparent;">
+    <div class="is-hero-medium">
+    <div class="is-hero-body is-hidden-mobile" id="banner">
+        <img class= "is-hidden-mobile" src="/img/UFO5.png" alt="UFO"
+                style="margin: 70px 10px 0px 10%; background: transparent; width: 20rem; height: 20rem;">
+    </div>
 </div>
     <main>
         {{{ body }}}
     </main>
 
-    <footer class="footer rows pb-2">
+    <footer class="footer rows pb-5" id="footer">
         <div class="row-is-full content has-text-centered">
             <p>
-                <a href="/">Home</a>{{#if loggedIn}} |
-                <a href="/blogs">Blogs</a>
-                <a href="/dashboard/">Dashboard</a> |
-                <a href="/dashboard/create/">Create New Post</a>
+                <a class="footerText" href="/">Home</a>{{#if loggedIn}} <span class="neonText" style="font-size: 1.5rem;"> 👽 </span> <a class="footerText" href="/dashboard/">Dashboard</a> <span class="neonText" style="font-size: 1.5rem;"> 👽 </span> 
+                <a class="footerText" href="/dashboard/create/">Create New Post</a>
                 {{else}}
-                | <a href="/login/">Login</a>
+                <span class="neonText" style="font-size: 1.5rem;"> 👽 </span> <a class="footerText" href="/login/">Login</a>
                 {{/if}}
             </p>
         </div>
         <div class="row-is-full content has-text-centered">
             <p>
-                <a href="https://github.com/uglyb0nes/4thKind">© 4thKind.com 2021</a>
+                <a class="footerText" href="https://github.com/uglyb0nes/4thKind">© 4thKind.com 2021</a>
             </p>
         </div>
     </footer>
@@ -57,6 +66,10 @@
 {{#if loggedIn}}
 <script src="/js/logout.js"></script>
 {{/if}}
+
+
+
+
 </body>
 
 </html>
