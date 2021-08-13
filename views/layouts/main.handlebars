@@ -27,7 +27,9 @@
             {{/if}}
         </nav>
     </header>
-
+<div id= "banner">
+    <img src="/img/UFO2.png" alt="UFO" style="margin: 200px 0px 0px 45%; background: transparent;">
+</div>
     <main>
         {{{ body }}}
     </main>
@@ -36,6 +38,7 @@
         <div class="row-is-full content has-text-centered">
             <p>
                 <a href="/">Home</a>{{#if loggedIn}} |
+                <a href="/blogs">Blogs</a>
                 <a href="/dashboard/">Dashboard</a> |
                 <a href="/dashboard/create/">Create New Post</a>
                 {{else}}
