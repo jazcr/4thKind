@@ -27,4 +27,19 @@ async function commentFormHandler(event) {
     }
 }
 
+
+const upButtonHandler = async(event) => {
+    if (event.target.hasAttribute('data-id')) {
+        const id = event.target.getAttribute('data-id');
+        document.location.href = `/api/comments/${id}`
+    }
+    if (response.ok) {
+        document.location.replace('/dashboard');
+    } else {
+        alert('Failed to update comment');
+    }
+}
+
 document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);
+// document.querySelector('.commentBtn').addEventListener('click', delButtonHandler);
+document.querySelector('.updateBtn').addEventListener('click', upButtonHandler);
