@@ -21,10 +21,10 @@ Install necessary packages, create database and seed the data, run server and go
 To use this app, follow the link to the live Heroku application!
 
 ## Contributors
-(https://github.com/rubiocode)
-(https://github.com/lhaykus)
-(https://github.com/jazcr)
-(https://github.com/uglyb0nes)
+https://github.com/rubiocode<br>
+https://github.com/lhaykus<br>
+https://github.com/jazcr<br>
+https://github.com/uglyb0nes
 
 
 ## License
