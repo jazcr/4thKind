@@ -16,7 +16,7 @@
         }
     </style>
 </head>
-
+<body>
 <div class="wrapper">
     <header>
         <h1 class="px-3 py-3 is-size-1 has-text-weigth-bold is-family-monospace has-text-centered"><span class="neonText">👽</span> THE FOURTH KIND
@@ -47,15 +47,14 @@
     </main>
 
 
-    <footer class="footer rows pb-5" id="footer">
+    <footer class="footer rows pb-5 footer1">
         <div class="row-is-full content has-text-centered">
-            <p>
                 <a class="footerText" href="/">Home</a>{{#if loggedIn}} <span class="neonText" style="font-size: 1.5rem;"> 👽 </span> <a class="footerText" href="/dashboard/">Dashboard</a> <span class="neonText" style="font-size: 1.5rem;"> 👽 </span> 
                 <a class="footerText" href="/dashboard/create/">Create New Post</a>
                 {{else}}
                 <span class="neonText" style="font-size: 1.5rem;"> 👽 </span> <a class="footerText" href="/login/">Login</a>
-
-    <footer class="footer rows pb-2">
+                {{/if}}
+    <footer class="footer rows pb-2 footer1">
         <div class="row-is-full content has-text-centered">
             <p>
                 <a href="/">Home</a>{{#if loggedIn}} |
@@ -78,6 +77,7 @@
 {{#if loggedIn}}
 <script src="/js/logout.js"></script>
 {{/if}}
+
 </body>
 
 </html>

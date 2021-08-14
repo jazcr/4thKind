@@ -97,20 +97,40 @@ function initMap() {
     };
 
     //Create pinpoints when user clicks on map
-    google.maps.event.addListener(map, 'click', function (event) {
+    google.maps.event.addListener(map, 'click', function(event) {
         //Getting longitude and latitude of area clicked on
         addMarker({ coords: event.latLng });
-      //  saveMarker(event);
+        //  saveMarker(event);
 
     });
 
 
     //Creating an array to hold the pinpoints
-    let pinpoints = [
-        {
+    let pinpoints = [{
             coords: { lat: 39.7392, lng: -104.9903 },
+        },
+        {
+            coords: { lat: 39.7047, lng: -105.0814 },
+        },
+        {
+            coords: { lat: 39.5505, lng: -107.3248 },
+        },
+        {
+            coords: { lat: 40.6255, lng: -103.2077 },
+        },
+        {
+            coords: { lat: 38.7472, lng: -106.0756 },
+        },
+        {
+            coords: { lat: 39.3033, lng: -102.6046 },
+        },
+        {
+            coords: { lat: 38.8339, lng: -104.8214 },
+        },
+        {
+            coords: { lat: 35.2220, lng: -101.8313 },
+        },
 
-        }, 
     ];
 
 
@@ -138,12 +158,12 @@ function initMap() {
                 content: props.content,
             });
 
-            marker.addListener('click', function () {
+            marker.addListener('click', function() {
                 infoWindow.open(map, marker);
             });
 
-         map.data.add(new google.maps.data.Feature({properties:{}, geometry:new google.maps.Data.pinpoints(location)}));
-          
+            map.data.add(new google.maps.data.Feature({ properties: {}, geometry: new google.maps.Data.pinpoints(location) }));
+
 
         }
 
