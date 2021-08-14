@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +8,18 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
     <style type="text/css">
         body {
             cursor: url('data:image/x-icon;base64,AAACAAEAICACAAgACAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAP9IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAPAAAAH4AAAB+AAAA/wAAAP8AAAGZgAABGIAAARiAAAE8gAAB/4AAAP8AAAD/AAAAfgAAAAAAAA//////////////////////////////////////////////////////////////////////////////////////5////8P///+B////AP///wD///4Af//+AH///AA///wAP//8AD///AA///wAP//+AH///gB///cA///zgf//8='), auto;
         }
     </style>
 </head>
-<body>
 <div class="wrapper">
     <header>
-        <h1 class="px-3 py-3 is-size-1 has-text-weigth-bold is-family-monospace has-text-centered"><span class="neonText">👽</span> THE FOURTH KIND
+        <h1 class="px-3 py-3 is-size-1 has-text-weigth-bold is-family-monospace has-text-centered"><span class="neonText">👽</span> 4thKind
         </h1>
-        <p class="is-size-4">A safe place to share your extraterrestrial encounters! </p>
+        <p class="is-size-4 has-text-centered">A safe place to share your extraterrestrial encounters! </p>
         <nav class="navbar">
-
-        <h1 class="has-text-white px-3 py-3 has-text-weight-bold">4thKind</h1>
-        <p>A safe place to share your extraterrestrial encounters! 👽</p>
-        <nav class="navbar mt-2">
-
             {{#if loggedIn}}
             <a href="/" class="button is-success is-outlined is-hoverable navbar-item pt-1">Home</a>
             <a href="/dashboard" class="button is-success is-outlined navbar-item pt-1">Dashboard</a>
@@ -40,29 +32,17 @@
             {{/if}}
         </nav>
     </header>
-    
 </div>
     <main>
         {{{ body }}}
     </main>
-
-
     <footer class="footer rows pb-5 footer1">
         <div class="row-is-full content has-text-centered">
-                <a class="footerText" href="/">Home</a>{{#if loggedIn}} <span class="neonText" style="font-size: 1.5rem;"> 👽 </span> <a class="footerText" href="/dashboard/">Dashboard</a> <span class="neonText" style="font-size: 1.5rem;"> 👽 </span> 
+            <p>
+                <a class="footerText" href="/">Home</a>{{#if loggedIn}} <span class="neonText" style="font-size: 1.5rem;"> 👽</span> <a class="footerText" href="/dashboard/">Dashboard</a> <span class="neonText" style="font-size: 1.5rem;"> 👽</span> 
                 <a class="footerText" href="/dashboard/create/">Create New Post</a>
                 {{else}}
-                <span class="neonText" style="font-size: 1.5rem;"> 👽 </span> <a class="footerText" href="/login/">Login</a>
-                {{/if}}
-    <footer class="footer rows pb-2 footer1">
-        <div class="row-is-full content has-text-centered">
-            <p>
-                <a href="/">Home</a>{{#if loggedIn}} |
-                <a href="/dashboard/">Dashboard</a> |
-                <a href="/dashboard/create/">Create New Post</a>
-                {{else}}
-                | <a href="/login/">Login</a>
-
+                <span class="neonText" style="font-size: 1.5rem;"> 👽</span> <a class="footerText" href="/login/">Login</a>
                 {{/if}}
             </p>
         </div>
@@ -73,11 +53,8 @@
         </div>
     </footer>
 </div>
-
 {{#if loggedIn}}
 <script src="/js/logout.js"></script>
 {{/if}}
-
 </body>
-
 </html>
