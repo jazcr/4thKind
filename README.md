@@ -30,10 +30,10 @@ Install necessary packages, create database and seed the data, run server and go
 To use this app, follow this link to the live Heroku application! (https://the-4th-kind.herokuapp.com)
 
 ## Contributors
-https://github.com/rubiocode<br>
-https://github.com/lhaykus<br>
-https://github.com/jazcr<br>
-https://github.com/uglyb0nes
+Rubidia Rubio https://github.com/rubiocode<br>
+Loryn Haykus https://github.com/lhaykus<br>
+Jasmine Rudolph https://github.com/jazcr<br>
+Leigh Johnson https://github.com/uglyb0nes
 
 
 ## License
