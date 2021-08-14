@@ -9,8 +9,6 @@
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributors)
-* [Tests](#tests)
-* [Questions](#questions)
 * [License](#license)
 
 ## Description
