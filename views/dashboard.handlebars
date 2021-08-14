@@ -1,16 +1,19 @@
 <div class="mb-5 pt-3">        
-        <h2 class="title pb-4">Dashboard: Your Posts</h2><hr>
+        <h2 class="title pb-4">Dashboard: Your Posts </h2><hr>
 {{#if posts.length}}
     </div>
 
     {{#each posts as |post|}}
         {{> post-info post}}
         
-            <a href="/dashboard/edit/{{post.id}}"><button class="button mb-5 ml-5 is-warning">Edit Post</button></a>
+            <div style="background-color: black;
+    font-size: 1rem;">
+    <br></br>
+            <a href="/dashboard/edit/{{post.id}}"><button class="button is-success is-outlined mb-5 ml-5">Edit Post</button></a></div>
         </div>
     {{/each}}
 
 {{else}}
-<h6 class="pb-4 has-text-centered is-italic">Click the "Create Post" button to create your first post!</h6>
+<h6 class="subtitle is-5 pb-4 has-text-centered">Click the "Create Post" button to create your first post! <span style="font-size: 1.5rem;"> 👽 </span></h6>
 
 {{/if}}
