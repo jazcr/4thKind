@@ -23,6 +23,11 @@
         </h1>
         <p class="is-size-4">A safe place to share your extraterrestrial encounters! </p>
         <nav class="navbar">
+
+        <h1 class="has-text-white px-3 py-3 has-text-weight-bold">4thKind</h1>
+        <p>A safe place to share your extraterrestrial encounters! 👽</p>
+        <nav class="navbar mt-2">
+
             {{#if loggedIn}}
             <a href="/" class="button is-success is-outlined is-hoverable navbar-item pt-1">Home</a>
             <a href="/dashboard" class="button is-success is-outlined navbar-item pt-1">Dashboard</a>
@@ -41,6 +46,7 @@
         {{{ body }}}
     </main>
 
+
     <footer class="footer rows pb-5" id="footer">
         <div class="row-is-full content has-text-centered">
             <p>
@@ -48,6 +54,16 @@
                 <a class="footerText" href="/dashboard/create/">Create New Post</a>
                 {{else}}
                 <span class="neonText" style="font-size: 1.5rem;"> 👽 </span> <a class="footerText" href="/login/">Login</a>
+
+    <footer class="footer rows pb-2">
+        <div class="row-is-full content has-text-centered">
+            <p>
+                <a href="/">Home</a>{{#if loggedIn}} |
+                <a href="/dashboard/">Dashboard</a> |
+                <a href="/dashboard/create/">Create New Post</a>
+                {{else}}
+                | <a href="/login/">Login</a>
+
                 {{/if}}
             </p>
         </div>
@@ -62,10 +78,6 @@
 {{#if loggedIn}}
 <script src="/js/logout.js"></script>
 {{/if}}
-
-
-
-
 </body>
 
 </html>

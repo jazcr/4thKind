@@ -1,3 +1,4 @@
+
 <div class="is-hero is-full hero is-widescreen">
     <div class="is-hero-body is-hidden-mobile" id="banner">
         <img class= "is-hidden-mobile" src="/img/UFO5.png" alt="UFO"
@@ -16,10 +17,22 @@
 <div class="container-fluid">
     <h2 class="subtitle is-2 has-text-centered">UFO Gossip</h2>
     <p class="subtitle is-5 has-text-centered">See what our fellow UFO stalkers are saying!</p>
+
+<div id="map" style="width: auto; height: 550px; overflow:hidden;"></div>
+
+
 {{#each posts as |post|}}
 
 {{> post-info post }}
 </div>
+
+
+
+
+
+  
+
+
 
 
 
@@ -33,4 +46,8 @@
 
 <script 
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8mtSBqDx2ekqIGhPg-ZjqbStW5svNq7Q&callback=initMap" async>
+
 </script>
+
+</script>
+
