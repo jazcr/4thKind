@@ -10,7 +10,7 @@
 ![Screenshot](https://github.com/uglyb0nes/4thKind/blob/master/public/img/comments.png)
 
 
-### [Deployed Heroku Applicaiton](https://the-4th-kind.herokuapp.com)
+### [Deployed Heroku Applicaiton](https://blog-4thkind.herokuapp.com/)
 
 ## Table of Contents:
 
@@ -27,7 +27,7 @@ A blog-style UFO tracker app!
 Install necessary packages, create database and seed the data, run server and go to localhost!
 
 ## Usage
-To use this app, follow this link to the live Heroku application! (https://the-4th-kind.herokuapp.com)
+To use this app, follow this link to the live Heroku application! (https://blog-4thkind.herokuapp.com/)
 
 ## Contributors
 Rubidia Rubio https://github.com/rubiocode<br>
